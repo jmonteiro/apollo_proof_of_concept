@@ -22,11 +22,13 @@ module ApolloProofOfConcept
         method: "POST"
       ),
       root: Trace::Node.new(
+        response_name: "user",
         original_field_name: "user",
         type: "User!",
         parent_type: "Query",
         child: [
           ::Trace::Node.new(
+            response_name: "email",
             original_field_name: "email",
             type: "String!",
             start_time: 11,
